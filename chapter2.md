@@ -41,4 +41,4 @@ In many cases, obscurity arises because of inadequate documentation. But it's al
 
 'Dependencies lead to change amplification and a high cognitive load. Obscruity creates unknown unknowns and also contributes to cognitive load. 
 
-
+Complexity is also incremental and typically occurs through many many small increments. 

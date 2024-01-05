@@ -42,4 +42,24 @@ In modular programming, each module provides an abstraction in the form of its i
 
 The best modules are those that provide powerful functionality yet have simple interfaces. These are termed 'deep'. 
 
+The mechanism for file I/O provided by Unix and its descendants e.g. Linux is a beautiful example of a deep interface. 
+
+## 4.5 Shallow Modules
+
+A shallow module is one whose interface is relatively complex in comparision to the functionality it provides. 
+
+## 4.6 Classitis
+
+There exists a sort of fetishisation around making classes smaller:
+
+'The conventional wisdom in programming is that classes should be small, not deep... In systems suffering from classitis, developers are encouraged to minimize the amount of functionality in each new class: if you want more functionality, introduce more classes'. 
+
+Smaller classes also result in a verbose programming style due to the large amount of boilerplate required for each class. 
+
+## 4.8 Conclusion
+
+Seperateing the interface of a module from its implementation hides the complexity of the implementation from the rest of the system. 
+
+'The most important issue in designing classes and other modules is to make them deep, so that they have simple interfaces for the common use cases, yet still provide significant functionality. This maximises the amount of complexity that is concealed'. 
+
 

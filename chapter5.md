@@ -9,8 +9,6 @@ The previous chapter discusses the theory behind and what a deep module is - the
 
 The most important technique is informating hiding. 
 
-Note: Althoguh I thought information hiding and encapsulation were synonymous, there is a difference:
-
 ### Aside: Informatin hiding vs Encapsulation
 
 In 1978, Parans claims that the words encapsulation and information hiding are synonymous. But in 2001 Paul Roger showed the difference between encapsulation and information hiding with sample code. He says that we can have encapsulation without having information hiding. Encapsulation doesn't have strict rules on which access modifier to use - we cna use public, private or protected access modifiers. 
@@ -24,3 +22,15 @@ Infomration Hiding:
 Encapsulation:
 - An object-oriented principle that bundles data with functions operating on them. It's not strict on access modifiers and can use a public, private, or protected access modifier. It's a methodology to achieve information hiding. 
 - Encapsulation is more about controlling access to the internal details rather than completely restricting it.
+
+### Information Hiding
+
+Each module should encapsulate a few pieces of knowledge, which represent design decisions. The knowledge is embedded in the module's implementation but doesn't appear in its interface, so not visible to other modules. 
+
+Information hiding reduces complexity in 2 ways:
+(1) It simplifies the interface to a module.
+(2) It makes it easier to evolve the system. If a piece of information is hidden, there aren't any dependencies on that information outside of the module containing the information. So design changes related to this will only affect the 1 module. 
+
+NB hiding variables and methods in a class by declaring them private isn't the same thing as information hiding, as information about private items can be exposed through public methods like getters and setters. 
+
+## 5.2 Information Leakage

@@ -34,3 +34,5 @@ Information hiding reduces complexity in 2 ways:
 NB hiding variables and methods in a class by declaring them private isn't the same thing as information hiding, as information about private items can be exposed through public methods like getters and setters. 
 
 ## 5.2 Information Leakage
+
+The opposite of information hiding. Occurs when a design decision is reflected in multiple modules.
